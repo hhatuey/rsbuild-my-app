@@ -1,13 +1,21 @@
 body {
   margin: 0;
   color: #fff;
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, Avenir, 'Courier New', Courier, monospace, Helvetica, Arial, sans-serif;
   background-image: linear-gradient(to bottom, #020917, #101725);
+}
+
+#root {
+  gap: 8;
+  display: grid;
+  overflow: hidden;
+  height: 100vh;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: minmax(0, 1fr);
 }
 
 .content {
   display: flex;
-  min-height: 100vh;
   line-height: 1.1;
   text-align: center;
   flex-direction: column;
