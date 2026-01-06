@@ -1,4 +1,8 @@
-import './App.css';
+import { createFileRoute } from '@tanstack/react-router'
+
+export const Route = createFileRoute('/')({
+  component: App,
+})
 
 const App = () => {
   return (
@@ -8,5 +12,3 @@ const App = () => {
     </div>
   );
 };
-
-export default App;
